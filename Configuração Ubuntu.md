@@ -129,10 +129,10 @@ Por fim, precisamos instalar as dependências necessárias para a utilização d
 
 ```console
 foo@bar$ sudo apt install libncurses-dev libtinfo-dev
-foo@bar$ sudo ln -s /usr/lib/x86_64-linux-gnu/libncurses.so.6 \
-> /usr/lib/x86_64-linux-gnu/libncurses.so.5
-foo@bar$ sudo ln -s /usr/lib/x86_64-linux-gnu/libtinfo.so.6 \
-> /usr/lib/x86_64-linux-gnu/libtinfo.so.5
+foo@bar$ sudo ln -s /usr/lib/x86_64-linux-gnu/libncurses.so.6 
+foo@bar$ sudo ln -s /usr/lib/x86_64-linux-gnu/libncurses.so.5
+foo@bar$ sudo ln -s /usr/lib/x86_64-linux-gnu/libtinfo.so.6 
+foo@bar$ sudo ln -s /usr/lib/x86_64-linux-gnu/libtinfo.so.5
 ```
 
 Podemos testar se o *toolchain* foi instalada correntamente por meio dos comandos:
@@ -203,12 +203,12 @@ foo@bar$ cd openocd-code
 foo@bar$ git tag
 ```
 
-![Ubuntu terminal](./images/ubuntu-openocd-tags.jpg "Ubuntu terminal")
+![Ubuntu terminal](./images/ubuntu-openocd-tags-v2.png "Ubuntu terminal")
 
-Desejamos utilizar a versão *v0.11.0* portanto, devemos trocar para este *tag*.
+Desejamos utilizar a versão *v0.12.0* portanto, devemos trocar para este *tag*.
 
 ```console
-foo@bar$ git switch -c v0.11.0
+foo@bar$ git switch -c v0.12.0
 ```
 
 Agora, podemos compilar o **OpenOCD** utilizando a seguinte sequência de comandos
@@ -304,13 +304,13 @@ foo@bar$ cd stlink-tools
 foo@bar$ git tag
 ```
 
-![Ubuntu terminal](./images/ubuntu-stlink-tags.jpg "Ubuntu terminal")
+![Ubuntu terminal](./images/ubuntu-stlink-tags-v2.png "Ubuntu terminal")
 
 Desejamos compilar a versão estável mais recente logo, necessitamos alterar
 o *branch* para a *tag* da versão desejada:
 
 ```console
-foo@bar$ git switch -c v1.7.0
+foo@bar$ git switch -c v1.8.0
 ```
 
 Para compilar e instalar as ferramentas **stlink** execute os seguintes comandos
