@@ -109,7 +109,7 @@ Em seguida navegue até o diretório Downloads e baixe o **toolchain**
 ```console
 foo@bar$ cd
 foo@bar$ cd Downloads
-foo@bar$ wget https://developer.arm.com/-/media/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
+foo@bar$ wget \ https://developer.arm.com/-/media/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
 ```
 
 Após o término do download descompacte o arquivo no diretório ***/usr/share***.
